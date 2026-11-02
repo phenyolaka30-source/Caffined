@@ -21,32 +21,24 @@
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
+        
+        <div class="header-search">
+            <input type="text" id="globalSearch" placeholder="Search our menu...">
+        </div>
         <hr>
     </header>
 
     <main>
 
-        <section>
-            <h2>Our Coffee Shop</h2>
-            <p>Freshly brewed coffee, delicious treats, and a warm atmosphere.</p>
-
-            <img 
-                class="lightbox-trigger"
-                src="images/atmosphere.jpeg" 
-                srcset="images/atmosphere.jpeg 400w, images/atmosphere.jpeg 800w"
-                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 300px"
-                alt="Warm and welcoming coffee shop atmosphere at Brew & Bean">
+        <section class="hero-section" style="background-image: url('images/shop-bg.jpeg');">
+            <div class="hero-content">
+                <h2>Our Coffee Shop</h2>
+                <p>Freshly brewed coffee, delicious treats, and a warm atmosphere.</p>
+            </div>
         </section>
-
-        <hr>
 
         <section>
             <h2>Our Menu</h2>
-
-            <div class="search-container" style="margin-bottom: 20px;">
-                <label for="menuSearch" style="display: none;">Search Menu</label>
-                <input type="text" id="menuSearch" placeholder="Search our menu (e.g. 'Latte', 'Croissant')..." style="width: 100%; padding: 12px; border: 2px solid var(--color-caramel); border-radius: 4px;">
-            </div>
 
             <div class="menu-category">
                 <h3>Espresso Drinks</h3>
@@ -105,17 +97,12 @@
             </ul>
         </section>
 
-        <hr>
-
         <section>
             <h2>Special Offers</h2>
-
             <h3>Coffee Club</h3>
             <p>Buy 10 coffees, get your 11th free! Sign up in-store or online.</p>
-
             <h3>Bean Subscription</h3>
             <p>Get fresh beans delivered monthly. 15% off your first order.</p>
-
             <h3>Book a Tasting</h3>
             <p>Host a coffee tasting at your home or office. Contact us to book.</p>
         </section>
@@ -126,22 +113,9 @@
         <hr>
         <p><strong>Brew & Bean Coffee Co.</strong></p>
         <p>Artisan coffee roasters based in Cape Town. Ethically sourced, freshly roasted, brewed with love.</p>
-        <p>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Us</a> | 
-            <a href="services.html">Coffee Shop</a> | 
-            <a href="enquiry.html">Enquiry</a> | 
-            <a href="contact.html">Contact</a>
-        </p>
         <p>&copy; 2026 Brew & Bean Coffee Co. All rights reserved.</p>
     </footer>
 
-    <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img id="lightbox-img" src="" alt="Expanded view of image">
-    </div>
-
     <script src="script.js" defer></script>
-
 </body>
 </html>

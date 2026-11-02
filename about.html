@@ -21,24 +21,21 @@
             <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
+        
+        <div class="header-search">
+            <input type="text" id="globalSearch" placeholder="Search our menu...">
+        </div>
         <hr>
     </header>
 
     <main>
-        <section>
-            <h2>Our Story</h2>
-            <p>Brew & Bean was born out of a simple love for a great cup of coffee. What started as a small home-roasting experiment in 2020 has grown into a thriving community hub in the heart of Cape Town.</p>
-            <p>We believe that coffee is more than just a morning routine—it's a connection to the farmers who grow it, the roasters who craft it, and the people we share it with.</p>
-            
-            <img 
-                class="lightbox-trigger"
-                src="images/coffee-community.jpeg" 
-                srcset="images/coffee-community.jpeg 400w, images/coffee-community.jpeg 800w"
-                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 300px"
-                alt="The Brew & Bean team and community">
+        <section class="hero-section" style="background-image: url('images/story-bg.jpeg');">
+            <div class="hero-content">
+                <h2>Our Story</h2>
+                <p>Brew & Bean was born out of a simple love for a great cup of coffee. What started as a small home-roasting experiment in 2020 has grown into a thriving community hub in the heart of Cape Town.</p>
+                <p>We believe that coffee is more than just a morning routine—it's a connection to the farmers who grow it, the roasters who craft it, and the people we share it with.</p>
+            </div>
         </section>
-
-        <hr>
 
         <section>
             <h2>Our Values</h2>
@@ -57,20 +54,8 @@
         <hr>
         <p><strong>Brew & Bean Coffee Co.</strong></p>
         <p>Artisan coffee roasters based in Cape Town. Ethically sourced, freshly roasted, brewed with love.</p>
-        <p>
-            <a href="index.html">Home</a> | 
-            <a href="about.html">About Us</a> | 
-            <a href="services.html">Coffee Shop</a> | 
-            <a href="enquiry.html">Enquiry</a> | 
-            <a href="contact.html">Contact</a>
-        </p>
         <p>&copy; 2026 Brew & Bean Coffee Co. All rights reserved.</p>
     </footer>
-
-    <div id="lightbox" class="lightbox">
-        <span class="close-lightbox">&times;</span>
-        <img id="lightbox-img" src="" alt="Expanded view of image">
-    </div>
 
     <script src="script.js" defer></script>
 </body>
