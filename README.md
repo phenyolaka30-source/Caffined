@@ -52,12 +52,11 @@ Images use `srcset` and `sizes` attributes, plus `object-fit: cover` to ensure i
 
 Screenshots
 
-Laptop
-![image alt](https://github.com/phenyolaka30-source/My-Website/blob/b227bb2d2c2fe79be67ef0ff1cd8b8dc059ba2aa/images/laptop.png)
 mobile
-![image alt](https://github.com/phenyolaka30-source/My-Website/blob/d6316953de1072ead6934ba5e303050904a4fe2b/images/mobile.png)
-tablet
-![image alt](https://github.com/phenyolaka30-source/My-Website/blob/36921e3e5bb187809de0d92667cebf170fdaefd2/images/tablet.png)
+<img width="1366" height="768" alt="Screenshot (189)" src="https://github.com/user-attachments/assets/02efc90d-e08e-4044-8cc2-0e9b3fc7ba1b" />
+
+laptop&tablet
+<img width="1366" height="768" alt="Screenshot (190)" src="https://github.com/user-attachments/assets/76860769-5a28-4c0c-b5ff-34ff280c8909" />
 
 References
 
