@@ -1,4 +1,4 @@
-Brew & Bean Coffee Co. — Website
+Caffined — Website
 
 A responsive five-page website for a fictional artisan coffee shop based in Cape Town.
 
