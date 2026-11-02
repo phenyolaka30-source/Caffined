@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Brew & Bean Coffee Co.</title>
+    <title>Contact Us | Brew & Bean Coffee Co.</title>
+    <meta name="description" content="Get in touch with Brew & Bean Coffee Co. Send us a general message, find our location in Cape Town, or call us directly.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,72 +14,52 @@
         <p><em>Artisan Coffee Roasters</em></p>
 
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="services.html">Coffee Shop</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Coffee Shop</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
         <hr>
     </header>
 
     <main>
-
         <section>
-            <h1>Contact Us</h1>
-            <p>Visit our coffee shop, call us, or send a message. We'd love to hear from you!</p>
+            <h2>Contact Us</h2>
+            <p>Have a general question? Send us a message below and we will get back to you as soon as possible.</p>
+            
+            <p><strong>Address:</strong> 123 Coffee Lane, Cape Town, 8001</p>
+            <p><strong>Phone:</strong> +27 21 555 0123</p>
 
-            <img 
-                src="images/contact-us.jpeg" 
-                srcset="images/contact-us.jpeg 400w, images/contact-us.jpeg 800w"
-                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 300px"
-                alt="Contact Brew & Bean Coffee Co.">
-        </section>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contName">Name:</label>
+                    <input type="text" id="contName" name="name" placeholder="Your Name">
+                    <span class="error-msg" id="contNameError">Please enter your name.</span>
+                </div>
 
-        <hr>
+                <div class="form-group">
+                    <label for="contEmail">Email Address:</label>
+                    <input type="email" id="contEmail" name="email" placeholder="you@example.com">
+                    <span class="error-msg" id="contEmailError">Please enter a valid email address.</span>
+                </div>
 
-        <section>
-            <h2>Bree Street – Main Store</h2>
-            <p><strong>Address:</strong> 42 Bree Street, Cape Town City Centre, 8001</p>
-            <p><strong>Phone:</strong> (021) 123-4567</p>
-            <p><strong>Email:</strong> hello@brewandbean.co.za</p>
-            <p><strong>Hours:</strong> Mon–Fri 6:30am–5pm, Sat–Sun 7am–4pm</p>
-        </section>
+                <div class="form-group">
+                    <label for="contSubject">Subject:</label>
+                    <input type="text" id="contSubject" name="subject" placeholder="What is this regarding?">
+                    <span class="error-msg" id="contSubjectError">Please enter a subject.</span>
+                </div>
 
-        <hr>
-
-        <section>
-            <h2>Kloof Street – Roastery</h2>
-            <p><strong>Address:</strong> 15 Kloof Street, Gardens, Cape Town, 8001</p>
-            <p><strong>Phone:</strong> (021) 987-6543</p>
-            <p><strong>Email:</strong> roastery@brewandbean.co.za</p>
-            <p><strong>Hours:</strong> Mon–Fri 8am–4pm (Closed weekends)</p>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Send a Quick Message</h2>
-
-            <form action="#" method="POST">
-
-                <label for="contactName">Your Name *</label><br>
-                <input type="text" id="contactName" name="contactName" placeholder="Enter your name" required>
-                <br><br>
-
-                <label for="contactEmail">Email *</label><br>
-                <input type="email" id="contactEmail" name="contactEmail" placeholder="Enter your email" required>
-                <br><br>
-
-                <label for="contactMessage">Message *</label><br>
-                <textarea id="contactMessage" name="contactMessage" rows="4" placeholder="Write your message..." required></textarea>
-                <br><br>
+                <div class="form-group">
+                    <label for="contMessage">Message:</label>
+                    <textarea id="contMessage" name="message" rows="5" placeholder="How can we help you?"></textarea>
+                    <span class="error-msg" id="contMessageError">Please type your message.</span>
+                </div>
 
                 <button type="submit">Send Message</button>
-
+                <div id="formSuccess" style="display:none; color: green; font-weight: bold; margin-top: 15px;"></div>
             </form>
         </section>
-
     </main>
 
     <footer>
@@ -86,14 +67,15 @@
         <p><strong>Brew & Bean Coffee Co.</strong></p>
         <p>Artisan coffee roasters based in Cape Town. Ethically sourced, freshly roasted, brewed with love.</p>
         <p>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="services.html">Coffee Shop</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="services.html">Coffee Shop</a> | 
+            <a href="enquiry.html">Enquiry</a> | 
             <a href="contact.html">Contact</a>
         </p>
         <p>&copy; 2026 Brew & Bean Coffee Co. All rights reserved.</p>
     </footer>
 
+    <script src="script.js" defer></script>
 </body>
 </html>

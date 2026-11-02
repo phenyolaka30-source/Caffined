@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us – Brew & Bean Coffee Co.</title>
+    <title>About Us | Brew & Bean Coffee Co.</title>
+    <meta name="description" content="Learn about the story, values, and team behind Brew & Bean Coffee Co. Discover our passion for ethical sourcing and community.">
+    <meta name="keywords" content="about coffee shop, coffee roasters Cape Town, ethical coffee, Brew and Bean story">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,84 +15,42 @@
         <p><em>Artisan Coffee Roasters</em></p>
 
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="services.html">Coffee Shop</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Coffee Shop</a>
+            <a href="enquiry.html">Enquiry</a>
             <a href="contact.html">Contact</a>
         </nav>
         <hr>
     </header>
 
     <main>
-
-        <section>
-            <h1>About Brew & Bean</h1>
-            <p>Our story, our mission, and the people behind the coffee.</p>
-        </section>
-
-        <hr>
-
         <section>
             <h2>Our Story</h2>
-            <p>Brew & Bean Coffee Co. was founded in 2018 by siblings Sarah and James van der Merwe in Cape Town. What started as a small coffee cart at local farmers' markets has grown into a beloved neighbourhood coffee shop and micro-roastery.</p>
-            <p>Sarah, a former barista champion, and James, a trained agronomist, combined their passion for coffee and sustainability to create a business that values quality, ethics, and community.</p>
-            <p>Today, we source beans directly from small-scale farmers in Ethiopia, Colombia, and Rwanda, roasting them in-house to unlock unique flavour profiles.</p>
-
+            <p>Brew & Bean was born out of a simple love for a great cup of coffee. What started as a small home-roasting experiment in 2020 has grown into a thriving community hub in the heart of Cape Town.</p>
+            <p>We believe that coffee is more than just a morning routine—it's a connection to the farmers who grow it, the roasters who craft it, and the people we share it with.</p>
+            
             <img 
-                src="images/story.jpeg" 
-                srcset="images/story.jpeg 400w, images/story.jpeg 800w"
+                class="lightbox-trigger"
+                src="images/coffee-community.jpeg" 
+                srcset="images/coffee-community.jpeg 400w, images/coffee-community.jpeg 800w"
                 sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 300px"
-                alt="The Brew & Bean story - from coffee cart to neighbourhood roastery">
+                alt="The Brew & Bean team and community">
         </section>
 
         <hr>
 
         <section>
-            <h2>Our Mission</h2>
-            <p>To bring exceptional, ethically sourced coffee to our community while fostering a warm, welcoming space where connections are brewed daily.</p>
-
-            <img 
-                src="images/mission.jpeg" 
-                srcset="images/mission.jpeg 400w, images/mission.jpeg 800w"
-                sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 300px"
-                alt="Our mission - ethically sourced coffee for our community">
-
-            <h2>Our Vision</h2>
-            <p>To become Cape Town's most trusted artisan coffee roaster, known for quality, sustainability, and community engagement.</p>
+            <h2>Our Values</h2>
+            <h3>Quality First</h3>
+            <p>We never compromise on the quality of our beans. Every batch is cupped and tested to ensure it meets our high standards.</p>
+            
+            <h3>Community Focused</h3>
+            <p>Our shop is a space for everyone. Whether you're a student studying for exams, a freelancer working remotely, or a friend catching up, you are welcome here.</p>
+            
+            <h3>Environmental Responsibility</h3>
+            <p>We are committed to reducing our waste and using compostable packaging wherever possible.</p>
         </section>
-
-        <hr>
-
-        <section>
-            <h2>Meet Our Team</h2>
-
-            <h3>Sarah van der Merwe</h3>
-            <p><strong>Co-Founder &amp; Head Barista</strong></p>
-            <p>Sarah brings 10 years of coffee experience and a passion for perfecting the art of brewing.</p>
-
-            <h3>James van der Merwe</h3>
-            <p><strong>Co-Founder &amp; Master Roaster</strong></p>
-            <p>James uses his agronomy background to source the best beans and roast them to perfection.</p>
-
-            <h3>Lindiwe Nkosi</h3>
-            <p><strong>Operations Manager</strong></p>
-            <p>Lindiwe ensures every customer has a welcoming experience and the shop runs smoothly.</p>
-        </section>
-
-        <hr>
-
-        <section>
-            <h2>Our Core Values</h2>
-            <ul>
-                <li><strong>Quality:</strong> We never compromise on the quality of our coffee or service.</li>
-                <li><strong>Ethics:</strong> We source fairly and pay sustainable prices to farmers.</li>
-                <li><strong>Sustainability:</strong> We minimise our environmental footprint at every step.</li>
-                <li><strong>Community:</strong> We build connections and welcome everyone.</li>
-                <li><strong>Passion:</strong> We love what we do, and it shows in every cup.</li>
-            </ul>
-        </section>
-
     </main>
 
     <footer>
@@ -98,14 +58,20 @@
         <p><strong>Brew & Bean Coffee Co.</strong></p>
         <p>Artisan coffee roasters based in Cape Town. Ethically sourced, freshly roasted, brewed with love.</p>
         <p>
-            <a href="index.html">Home</a> |
-            <a href="about.html">About Us</a> |
-            <a href="services.html">Coffee Shop</a> |
-            <a href="enquiry.html">Enquiry</a> |
+            <a href="index.html">Home</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="services.html">Coffee Shop</a> | 
+            <a href="enquiry.html">Enquiry</a> | 
             <a href="contact.html">Contact</a>
         </p>
         <p>&copy; 2026 Brew & Bean Coffee Co. All rights reserved.</p>
     </footer>
 
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img id="lightbox-img" src="" alt="Expanded view of image">
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

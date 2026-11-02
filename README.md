@@ -9,63 +9,45 @@ Module Code:WEDE5020POE
 
 contents
 
-index.html 
-about.html 
-services.html 
-enquiry.html 
-contact.html 
-style.css 
-README.md
-images/Site images
-screenshots
-references
+- `index.html`
+- `about.html`
+- `services.html`
+- `enquiry.html`
+- `contact.html`
+- `style.css`
+- `script.js`
+- `robots.txt`
+- `sitemap.xml`
+- `images/` (Site images)
+- `screenshots/` 
 
-Design
+## Design
+**Colour scheme:** Coffee-themed palette using CSS named colours — `saddlebrown`, `peru`, `beige`, `white`, `black` — stored as CSS variables in `:root`.
+**Typography:** `Georgia` (serif) for headings, `Arial` (sans-serif) for body text.
+**Layout:** Centered content column (`max-width: 900px`) using CSS Flexbox for navigation and structure. Soft shadows on section cards.
 
-Colour scheme:
-Coffee-themed palette using CSS named colours — `saddlebrown`, `peru`, `beige`, `white`, `black` — stored as CSS variables in `:root`.
-Typography:** `Georgia` (serif) for headings, `Arial` (sans-serif) for body text.
-Layout:** Centered content column (`max-width: 900px`) with soft shadows on section cards.
+## Responsive Design
+| Breakpoint | Target | Changes |
+|---|---|---|
+| `max-width: 768px` | Tablet | Smaller headings, tighter padding |
+| `max-width: 480px` | Mobile | Stacked navigation (Flexbox column), single-column layout, smaller font |
 
-Responsive Design
-
- Breakpoint | Target | Changes 
- `max-width: 768px`  Tablet | Smaller headings, tighter padding 
- `max-width: 480px`  Mobile | Stacked navigation, single-column layout, smaller font 
 Images use `srcset` and `sizes` attributes, plus the `<picture>` element on the homepage hero.
 
-Changelog — Part 2
+## Changelog — Part 2 Feedback Fixes
+- **Layout Structure:** Implemented CSS Flexbox on the `body`, `nav`, and `main` elements to fix the alignment and spacing issues noted in the feedback.
+- **Responsive Navigation:** Fixed the mobile navigation menu. It now stacks vertically and spans 100% width on screens smaller than 480px for better tap targets.
+- **Responsive Images:** Added `max-width: 100%` and `height: auto` to all images to prevent horizontal scrolling on mobile devices.
+- **References:** Updated the reference list below to follow correct Harvard referencing formatting.
 
-CSS Styling
-Created external `style.css` and linked it to all 5 HTML pages.
-Added a CSS reset (`* { margin: 0; padding: 0; box-sizing: border-box; }`).
-Defined the colour scheme as CSS variables in `:root`.
-Applied typography: `font-family`, `font-size`, `line-height`, `letter-spacing`.
-Applied visual styles: background colours, borders, `border-radius`, `box-shadow`.
-Added interactive states: `:hover`, `:focus`, `:active` on all links.
-
-Layout
-Styled header with dark brown background and centered content.
-Styled navigation as a horizontal inline menu.
-Styled `<main>` as a centered column with max-width.
-Styled sections as white cards with padding and shadows.
-Styled footer with dark background and centered text.
-
-Responsive Design
-Added `@media (max-width: 768px)` for tablet.
-Added `@media (max-width: 480px)` for mobile.
-Used relative units (`rem`, `%`) throughout.
-
-Responsive Images
-Added `srcset` and `sizes` attributes to all `<img>` tags.
-Used the `<picture>` element on the homepage hero image.
-Added descriptive `alt` text to all images.
-
-Fixes
-Removed invalid `height="auto"` attributes from `<img>` tags.
-Corrected `call-us.jpg` → `call-us.jpeg`.
-Corrected Windows backslash `\` to forward slash `/` in image paths.
-Renamed `coffee community.jpeg` to `coffee-community.jpeg` (removed space).
+## Changelog — Part 3 Updates
+- **JavaScript Enhancements:** Created an external `script.js` file linked to all HTML pages.
+- **Interactive Elements:** Added a JavaScript-powered FAQ Accordion on the Home page and a Lightbox image gallery.
+- **Dynamic Content:** Added a real-time JavaScript search filter on the Services page to filter menu items.
+- **Form Validation:** Added custom client-side JavaScript validation to `enquiry.html` and `contact.html` to check for empty fields, valid email formats, and correct phone number lengths without reloading the page.
+- **SEO On-Page:** Added specific `<title>` tags, meta descriptions, and meta keywords to the `<head>` of all pages. Ensured correct heading hierarchy (`h1` to `h3`).
+- **SEO Additional:** Created `robots.txt` and `sitemap.xml` to instruct search engine crawlers.
+- **Deployment:** Website deployed to GitHub Pages.
 
 Screenshots
 
@@ -78,8 +60,16 @@ tablet
 
 References
 
-MDN Web Docs — CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
-MDN Web Docs — Responsive Images: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images
-MDN Web Docs — CSS Variables: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
-W3Schools — CSS Media Queries: https://www.w3schools.com/css/css3_mediaqueries.asp
-W3Schools — CSS Colour Names: https://www.w3schools.com/cssref/css_colors.asp
+Mozilla Developer Network (MDN) (2026) *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS (Accessed: 10 October 2026).
+
+Mozilla Developer Network (MDN) (2026) *Responsive Images*. Available at: https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images (Accessed: 10 October 2026).
+
+Mozilla Developer Network (MDN) (2026) *CSS Variables*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties (Accessed: 10 October 2026).
+
+Mozilla Developer Network (MDN) (2026) *Client-side form validation*. Available at: https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation (Accessed: 10 October 2026).
+
+W3Schools (2026) *CSS Media Queries*. Available at: https://www.w3schools.com/css/css3_mediaqueries.asp (Accessed: 10 October 2026).
+
+W3Schools (2026) *CSS Colour Names*. Available at: https://www.w3schools.com/cssref/css_colors.asp (Accessed: 10 October 2026).
+
+W3Schools (2026) *JavaScript HTML DOM Events*. Available at: https://www.w3schools.com/js/js_htmldom_events.asp (Accessed: 10 October 2026).

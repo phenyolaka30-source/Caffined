@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phenyolaka30-source.github.io/My-Website/sitemap.xml
