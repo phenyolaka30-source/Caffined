@@ -24,7 +24,8 @@ contents
 ## Design
 **Colour scheme:** Coffee-themed palette using CSS named colours — `saddlebrown`, `peru`, `beige`, `white`, `black` — stored as CSS variables in `:root`.
 **Typography:** `Georgia` (serif) for headings, `Arial` (sans-serif) for body text.
-**Layout:** Centered content column (`max-width: 900px`) using CSS Flexbox for navigation and structure. Soft shadows on section cards.
+**Layout:** Centered content column (`max-width: 900px`) using CSS Flexbox for navigation and CSS Grid for the feature windows. Soft shadows on section cards.
+**Hover Effects:** Added smooth CSS transitions and transform effects on buttons, navigation links, form inputs, and feature cards to improve user interaction.
 
 ## Responsive Design
 | Breakpoint | Target | Changes |
@@ -32,20 +33,20 @@ contents
 | `max-width: 768px` | Tablet | Smaller headings, tighter padding |
 | `max-width: 480px` | Mobile | Stacked navigation (Flexbox column), single-column layout, smaller font |
 
-Images use `srcset` and `sizes` attributes, plus the `<picture>` element on the homepage hero.
+Images use `srcset` and `sizes` attributes, plus `object-fit: cover` to ensure images in the feature windows maintain their aspect ratio without stretching.
 
 ## Changelog — Part 2 Feedback Fixes
 - **Layout Structure:** Implemented CSS Flexbox on the `body`, `nav`, and `main` elements to fix the alignment and spacing issues noted in the feedback.
 - **Responsive Navigation:** Fixed the mobile navigation menu. It now stacks vertically and spans 100% width on screens smaller than 480px for better tap targets.
-- **Responsive Images:** Added `max-width: 100%` and `height: auto` to all images to prevent horizontal scrolling on mobile devices.
+- **Responsive Images:** Added `max-width: 100%`, `height: auto`, and `object-fit: cover` to images to prevent horizontal scrolling and stretching on mobile devices.
 - **References:** Updated the reference list below to follow correct Harvard referencing formatting.
 
 ## Changelog — Part 3 Updates
-- **JavaScript Enhancements:** Created an external `script.js` file linked to all HTML pages.
-- **Interactive Elements:** Added a JavaScript-powered FAQ Accordion on the Home page and a Lightbox image gallery.
-- **Dynamic Content:** Added a real-time JavaScript search filter on the Services page to filter menu items.
+- **JavaScript Enhancements:** Created an external `script.js` file linked to all HTML pages using the `defer` attribute.
+- **Interactive Elements:** Added a JavaScript-powered FAQ Accordion on the Home page and a Lightbox image gallery for the feature windows.
+- **Dynamic Content:** Added a real-time JavaScript search filter in the header. Users can search the menu from any page, and it will redirect to the Services page with the results filtered.
 - **Form Validation:** Added custom client-side JavaScript validation to `enquiry.html` and `contact.html` to check for empty fields, valid email formats, and correct phone number lengths without reloading the page.
-- **SEO On-Page:** Added specific `<title>` tags, meta descriptions, and meta keywords to the `<head>` of all pages. Ensured correct heading hierarchy (`h1` to `h3`).
+- **SEO On-Page:** Added specific `<title>` tags, meta descriptions, and meta keywords to the `<head>` of all pages. Ensured correct heading hierarchy (`h1` to `h3`). Removed navigation links from the footer to improve site structure.
 - **SEO Additional:** Created `robots.txt` and `sitemap.xml` to instruct search engine crawlers.
 - **Deployment:** Website deployed to GitHub Pages.
 
